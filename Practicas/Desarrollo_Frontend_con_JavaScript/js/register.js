@@ -4,7 +4,7 @@ import MessageController from "./controllers/MessageController.js";
 import RegisterController from "./controllers/RegisterController.js";
 
 window.addEventListener('DOMContentLoaded', () => {
-    const FormElement = document.querySelector('.register__form')
+    const FormElement = document.querySelector('.auth__form')
     new RegisterController(FormElement);
 
     const MessageElement = document.querySelector('.control-message');
