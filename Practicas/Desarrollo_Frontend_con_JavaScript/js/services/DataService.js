@@ -43,5 +43,27 @@ export default {
         } catch (error) {
             throw error;
         }
+    },
+
+    getAds: async () => {
+        const url = 'http://localhost:8000/api/adverts';
+        const config = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        };
+
+        try {
+            const response = await fetch(url, config);
+            const data = await response.json();
+            if (response.ok) {
+                return data;
+            } else {
+                throw new Error(data.message);
+            }
+        } catch (error) {
+            throw error;
+        }
     }
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/lds-circle.css">
+    <title>Desarrollo Frontend con JavaScript</title>
+</head>
+<body>
+    <header class="header">
+        <img src="" alt="">
+        <div class="header__buttons">
+            <a href="#">Login</a>
+            <a href="#">Sign up</a>
+        </div>
+    </header>
+    <main class="new-ad__main">
+        <section class="new-ad__main--section">
+            <h1 class="new-ad__title">Login</h1>
+            <form class="new-ad__form" novalidate>
+                <div class="form-control">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="Title" required autofocus>
+                </div>
+                <div class="form-control">
+                    <label for="price">Precio</label>
+                    <input type="number" name="price" placeholder="50 €" required>
+                </div>
+                <div class="form-control">
+                    <button type="submit" disabled>login</button>
+                </div>
+            </form>
+            <div class="control-message"></div>
+        </section>
+    </main>   
+    <div class="ads-list"></div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
