@@ -16,9 +16,11 @@ export default class LoginController {
                 const data = new FormData(this.DOMElement);
                 const username = data.get('username');
                 const password = data.get('password');
-
+                const url = new URLSearchParams(window.location.href);
+                const next = url.get('next') || '/';
                 try {
                     await DataService.authUser({ username, password });
+                    location.href = next;
                 } catch (error) {
                     PubSub.publish(PubSub.events.SHOW_ERROR, error);
                 }

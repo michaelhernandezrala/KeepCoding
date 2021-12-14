@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/lds-circle.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Desarrollo Frontend con JavaScript</title>
 </head>
+
 <body>
     <header class="header">
-        <img src="" alt="">
-        <div class="header__buttons">
-            <a href="#">Login</a>
-            <a href="#">Sign up</a>
+        <div class="wrapper">
+            <img src="" alt="">
+            <div class="header__buttons">
+                <a href="#">Login</a>
+                <a href="#">Sign up</a>
+            </div>
         </div>
     </header>
     <main class="home__main">
-        <section class="home__main--searcher"></section>
-        <div class="lds-circle"><div></div></div>  
-        <section class="home__main--ads"></section>
-    </main>   
+        <div class="wrapper">
+            <section class="home__main--searcher"></section>
+            <div class="lds-circle">
+                <div></div>
+            </div>
+            <section class="home__main--ads"></section>
+        </div>
+    </main>
     <div class="ads-list"></div>
     <script src="./js/index.js" type="module"></script>
 </body>
+
 </html>

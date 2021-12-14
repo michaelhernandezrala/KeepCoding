@@ -20,21 +20,37 @@
             <h1 class="new-ad__title">Login</h1>
             <form class="new-ad__form" novalidate>
                 <div class="form-control">
+                    <label for="photo">Photo</label>
+                    <input type="text" name="photo" placeholder="URL Image" autofocus>
+                </div>
+                <div class="form-control">
                     <label for="title">Title</label>
                     <input type="text" name="title" placeholder="Title" required autofocus>
+                </div>
+                <div class="form-control">
+                    <label for="description">Description</label>
+                    <textarea name="description" placeholder="Description" required></textarea>
                 </div>
                 <div class="form-control">
                     <label for="price">Precio</label>
                     <input type="number" name="price" placeholder="50 €" required>
                 </div>
                 <div class="form-control">
-                    <button type="submit" disabled>login</button>
+                    <label for="type">Type</label>
+                    <select name="type">
+                        <option value="#" selected>-- Choose an option</option>
+                        <option value="sell">Sell</option>
+                        <option value="buy">Buy</option>
+                      </select>
+                </div>
+                <div class="form-control">
+                    <button type="submit">Create advert</button>
                 </div>
             </form>
             <div class="control-message"></div>
         </section>
     </main>   
     <div class="ads-list"></div>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/newAdvert.js" type="module"></script>
 </body>
 </html>
